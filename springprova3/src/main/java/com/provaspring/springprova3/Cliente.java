@@ -11,7 +11,6 @@ public class Cliente {
     private Long id;
     private String name;
     @OneToMany(mappedBy = "cliente")
-    @JoinColumn(name = "id", nullable=false, insertable=false, updatable=false)
     private List<Tarefas> tarefas = new ArrayList<>();
 
     public Cliente() {

@@ -11,7 +11,7 @@ public class Tarefas {
     private Long id;
     private String name;
     @ManyToOne
-    @JoinColumn(name = "id", nullable=false, insertable=false, updatable=false)
+    @JoinColumn(name = "clienteid")
     private Cliente cliente;
 
     public Tarefas() {
